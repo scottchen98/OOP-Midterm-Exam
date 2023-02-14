@@ -1,5 +1,6 @@
 import IImportable from "./IImportable";
 const localPlaylist = require("./localPlaylist.json");
+// import * as localPlaylist from "./localPlaylist.json";
 import { readFileSync } from "fs";
 import { Playlist } from "./Playlist";
 import { Artist } from "./Artist";

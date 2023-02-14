@@ -5,7 +5,7 @@ export class Album {
   private _title: string = "";
   private _artist: Artist;
   private _yearReleased: number;
-  private _tracks!: Song[];
+  private _tracks: Song[] = [];
 
   constructor(title: string, artist: Artist, yearReleased: number) {
     this.setAlbumName(title);
@@ -37,3 +37,7 @@ export class Album {
     return this._tracks;
   }
 }
+
+// const one = new Album("The 2nd Law", new Artist("Scott"), 2012);
+// one.addTrack(new Song("Hello"));
+// console.log(one.getAlbumTracks());

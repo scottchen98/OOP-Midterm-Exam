@@ -5,8 +5,8 @@ import { Song } from "./Song";
 export class User {
   private _username: string;
   private _password: string;
-  private _playlists!: Playlist[];
-  private _albums!: Album[];
+  private _playlists: Playlist[] = [];
+  private _albums: Album[] = [];
 
   constructor(username: string, password: string) {
     this._username = username;

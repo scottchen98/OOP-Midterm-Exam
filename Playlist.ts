@@ -3,14 +3,14 @@ import { Song } from "./Song";
 
 export class Playlist {
   private _name: string = "";
-  private _songs!: Song[];
+  private _songs: Song[] = [];
 
   constructor(name: string) {
     this.setPlaylistName(name);
   }
 
   setPlaylistName(name: string): void {
-    if (!name.length) {
+    if (name.length > 0) {
       this._name = name;
     } else {
       throw new Error("Must have a playlist name!");
